@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Tailwind</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class="text-6xl">Mari Belajar Tailwind CSS</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: '3.25rem',
+            },
+            fontFamily: {
+              inter: ['Inter'],
+            },
+            colors: {
+                wpu: '#bada55',
+                kopi: '#c0ffee'
+            }
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent" >TailwindCSS</span></h1>
+    <section class="mb-10 bg-gradient-to-br from-indigo-400 via-red-400 to-yellow-500">
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="p-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-kopi">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-2 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+      <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Sandhika Galih</a>, 1 Januari 2022</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet <a href="" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Porro corrupti
+        illum ad soluta tenetur, animi ut natus molestias reprehenderit minima
+        maxime omnis tempore ducimus maiores delectus ullam velit temporibus
+        aliquam sed officia, nemo recusandae laudantium labore. Ipsum aliquam
+        earum consectetur inventore dolores necessitatibus, perspiciatis dolor
+        accusamus blanditiis enim quam molestiae?
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ab
+        maxime enim provident corporis dolores architecto voluptatem omnis
+        maiores harum.""
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, voluptas
+        possimus? Sapiente vitae error nisi optio ipsa atque blanditiis
+        similique illo eos sunt, ut, molestias aliquam nostrum eum perspiciatis
+        iure!
+      </p>
+    </section>
+  </body>
 </html>
